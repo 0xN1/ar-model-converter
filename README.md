@@ -2,10 +2,10 @@
 
 AR Model converter. Convert obj model to usdz and glTF.
 
-- usdz conversion uses `usdz_converter`
-- glTF conversion uses `obj2gltf`
+- usdz conversion uses [`usdz_converter`](https://developer.apple.com/videos/play/wwdc2018/603/)
+- glTF conversion uses [`obj2gltf`](https://github.com/AnalyticalGraphicsInc/obj2gltf)
 
-Command line tool uses `inquirer.js`
+Command line tool uses [`inquirer.js`](https://github.com/SBoudrias/Inquirer.js/)
 
 ## Prerequisites
 
@@ -25,17 +25,25 @@ $ npm install
 
 ## Usage
 
+Make sure you have prepared all the necessary textures for conversion like : 
+- Diffuse
+- Roughness
+- Metallic
+- Normal
+- Emissive
+- ORM (for glTF)
+
 ```bash
 $ node index.js
 ```
 
 or [build](#build) and run the binary file.
 
-you can get the binary from releases folder
+or you can get the binary from [releases](https://github.com/fukarinka/ar-model-converter/releases) folder
 
 ## Build
 
-You need `pkg` for this.
+You need [`pkg`](https://github.com/zeit/pkg) for this.
 
 ```bash
 $ npm install -g pkg
