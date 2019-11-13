@@ -1,0 +1,16 @@
+{
+  "name": "ar-model-converter",
+  "version": "1.0.0",
+  "description": "A converter to convert AR model. obj -> gltf or obj -> usdz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg ./index.js --out-path releases"
+  },
+  "author": "Muhammad Syahman",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.0.0",
+    "shelljs": "^0.8.3"
+  }
+}
